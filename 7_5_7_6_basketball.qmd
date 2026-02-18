@@ -60,6 +60,20 @@ ggplot(NULL, aes(x = sample_mean_heights)) +
   geom_histogram(binwidth = 0.1)
 ```
 
+Mean of sample means:
+
+```{r}
+mean(sample_mean_heights)
+```
+
+Standard deviation of sample means:
+
+```{r}
+sd(sample_mean_heights)
+```
+
+
+
 # Graph Shooting Guard Heights
 
 Mean:
