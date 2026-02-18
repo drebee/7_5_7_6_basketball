@@ -5,15 +5,13 @@ format: html
 
 ```{r}
 library(tidyverse)
-library(googlesheets4)
 library(purrr)
 ```
 
 # Load data
 
 ```{r}
-url = "https://docs.google.com/spreadsheets/d/1ZnCkZK8pDaXrumVRAx1UV4aQc13f3MQnoR2R6ppA02I/edit?gid=0#gid=0"
-df = read_sheet(url)
+df = read_csv("NBA Heights.csv")
 power_forwards = df |> drop_na() |> pull("Power Forwards")
 shooting_guards = df |> pull("Shooting Guards")
 ```
